@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1B244A;
+    /* Dark blue background from image */
+    font-family: 'Verdana', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    border: 5px solid #9AABD8;
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* The card itself/container for the scoreboard */
+.scoreboard-card {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    /* Adjust as needed */
+    padding: 20px;
+    background-color: #1B244A;
+    /* Same as body for now, or slight variation if needed */
+    /* If the image implies a card, we can add border/shadow, but it looks like the whole BG is the board */
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.team-name {
+    color: #EEEEEE;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.score-display {
+    background-color: #00170d;
+    color: #fc3257;
+    /* The pinkish-red color from the image */
+    width: 170px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: 'Orbitron', 'Courier New', monospace;
+    /* Tech/Digital look */
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.button-group button {
+    background: transparent;
+    border: 3px solid #9AABD8;
+    /* Light blueish border */
+    color: #9AABD8;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'Verdana', sans-serif;
+    /* Or 'Cursed Timer ULiL' if utilizing a theme */
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button-group button:hover {
+    background-color: #9AABD8;
+    color: #1B244A;
+    font-size: 22px;
+    padding: 7px 12px;
+    border: 3px solid #1B244A;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+
+}
+
+/* Optional: To make the font look more like the 7-segment display without a specific font file,
+   we rely on a bold monospace or specific web font.
+   'Cursed Timer ULiL' is not a standard Google Font, so I'll try to find a lookalike or use system monospace. 
+*/
+@font-face {
+    font-family: 'Digital7';
+    src: url('https://db.onlinewebfonts.com/t/865c697818e60742f5341498642730z.woff2') format('woff2');
+    /* This is a direct link example; in production, use a reliable source or local file. 
+       For now, I'll rely on a safe stack. */
+}
+
+.reset-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#reset-button {
+    background: transparent;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Verdana', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#reset-button:hover {
+    background-color: #9AABD8;
+    color: #1B244A;
+    font-size: 22px;
+    padding: 7.5px 14px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+#reset-button:active {
+    transform: scale(0.95);
+    font-size: 20px;
+    padding: 9px 20px;
+
+}
